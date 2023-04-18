@@ -1,0 +1,13 @@
+﻿@model IList<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<section>
+    @foreach (var product in Model)
+    {
+        <partial name="ProductPartial" model="product"/>
+    }
+</section>
